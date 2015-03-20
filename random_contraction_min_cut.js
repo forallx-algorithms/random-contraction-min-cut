@@ -117,7 +117,7 @@ function calculateMinCut(g){
 // @return {Integer} Size of the mincut
 function kMinCut(g, n){
   var size = Object.keys(g).length;
-  var n = n ? n : Math.round( (Math.pow(size, 2) * Math.log(size))/4 );
+  var n = n ? n : Math.round( Math.pow(size, 2) * Math.log(size) );
   var mincut = Infinity;
 
   for(var i=0; i<n; i++){
